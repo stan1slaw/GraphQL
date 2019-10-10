@@ -57,7 +57,7 @@ const Query = new GraphQLObjectType({
       type: DirectorType,
       args: { id: { type: GraphQLID } },
       resolve(parent, args) {
-        //  return directors.find(director => director.id === args.id);
+        //  return directors.find(director => director.id === args.id)
         return Directors.findById(args.id);
       }
     },
