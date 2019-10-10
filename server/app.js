@@ -9,7 +9,8 @@ const PORT = 3005;
 mongoose.connect(`mongodb://stanislaw:kamenka@cluster0-shard-00-00-yzieo.mongodb.net:27017,cluster0-shard-00-01-yzieo.mongodb.net:27017,cluster0-shard-00-02-yzieo.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true&w=majority`, {
   useNewUrlParser: true,
   dbName: "graphQL",
-  useUnifiedTopology: true
+  useUnifiedTopology: true,
+  useFindAndModify: false
 })
 
 const connection = mongoose.connection
