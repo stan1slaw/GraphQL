@@ -11,7 +11,7 @@ const witGraphQL = compose(
       addDirector: director =>
         mutate({
           variables: director,
-          refetchQueries: [{ query: directorsQuery }]
+          refetchQueries: [{ query: directorsQuery, variables: { name: " " } }]
         })
     })
   }),
@@ -20,7 +20,7 @@ const witGraphQL = compose(
       updateDirector: director =>
         mutate({
           variables: director,
-          refetchQueries: [{ query: directorsQuery }]
+          refetchQueries: [{ query: directorsQuery, variables: { name: " " } }]
         })
     })
   })

@@ -30,7 +30,7 @@ export const updateMovieMutation = gql`
     $rate: Int,
     $directorId: ID
   ) {
-    addMovie(
+    updateMovie(
       id: $id,
       name: $name,
       genre: $genre,
