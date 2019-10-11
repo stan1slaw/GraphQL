@@ -6,6 +6,12 @@ query moviesQuery {
         id 
         name
         genre
+        watched
+        rate
+        director {
+            name
+            id
+        }
     }
 }
 `;
